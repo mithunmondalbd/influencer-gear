@@ -1,0 +1,400 @@
+/* Font-family links added from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* Css custom variable  */
+:root {
+    --font-family-inter: 'Inter', sans-serif;
+    --font-family-poppins: 'Poppins', sans-serif;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-family-manrope: 'Manrope', sans-serif;
+    --font-family-roboto: 'Roboto', sans-serif;
+    --background-color: #E02C6D;
+    --font-size: 14px;
+    --font-weight: 700;
+    --gray-50: #787885;
+    --font-color: #3A3A3A;
+    --orange-color: #FB8200;
+    --number-color: rgba(0, 0, 0, 0.87);
+    --font-style: normal;
+    --text-gray-900: #18191F;
+    --percent-color: #5E6366;
+    --white-color: #FFF;
+    --feature-text: #0A0826;
+    --feature-desc: #6C6C6C;
+    --text-gray: #D9DBE1;
+    --box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    --background: #0A0826;
+}
+
+/* Universal selector  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Navbar-menu section starting is here */
+.navbar-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar-title {
+    color: rgba(58, 58, 58, 1);
+    font-family: var(--font-family-poppins);
+    font-weight: var(--font-weight);
+    font-size: 24px;
+    position: relative;
+    /* bottom: 5px; */
+}
+
+.navbar-menu ul {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-menu li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--font-color);
+    word-spacing: normal;
+    margin-right: 40px;
+}
+
+.navbar-menu li a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.navbar a:hover {}
+
+.icon-menu {
+    color: rgba(0, 0, 0, 1);
+}
+
+/* Navbar-menu section ending is here */
+
+/* Banner section is starting now here */
+.banner-section {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+.banner-content {
+    box-sizing: border-box;
+    /* border: 1px solid tomato; */
+    flex-basis: 50%;
+    justify-content: flex-start;
+}
+
+.banner-heading {
+    font-size: 3.125rem;
+    font-weight: var(--font-weight);
+    color: var(--font-color);
+    font-family: var(--font-family-poppins);
+    line-height: 65px;
+    padding-bottom: 10px;
+}
+
+.banner-description {
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    padding: 10px 22px;
+    border: 0;
+    align-items: center;
+    font-family: var(--font-family-poppins);
+    font-size: 16px;
+    font-weight: var(--font-weight);
+    border-radius: 41px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.right-arrow {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 2px;
+}
+
+.img-banner {
+    background-image: url("../images/Circle\ design.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin-right: 100px; */
+}
+
+.banner-image {
+    width: 100%;
+}
+
+/* Brand name section start is here */
+.brand-name {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* align-items: center;
+    justify-content: space-around;
+    align-content: center; */
+    border-top: 1px solid slategrey;
+    border-bottom: 1px solid slategrey;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: calc(90% - 100px);
+}
+
+/* Product card section start here */
+.product-category {
+    margin: 70px 0 20px;
+    text-align: center;
+    color: var(--font-color);
+    font-size: 28px;
+    font-weight: 600px;
+    font-family: var(--font-family-poppins);
+    line-height: 70px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: calc(90% - 100px - 20px);
+    margin: auto;
+    text-align: center;
+}
+
+.product-cards {
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+.resize{
+    text-align: left;
+}
+
+.img-card {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-family: var(--font-family-poppins);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--text-gray-900);
+}
+
+.price {
+    font-family: var(--font-family-inter);
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 150%;
+}
+
+.reviews {
+    color: #5E6366;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: var(--font-weight);
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.1px;
+}
+
+.star i {
+    color: var(--orange-color);
+}
+
+.description {
+    color: var(--gray-50);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: 143%;
+    letter-spacing: 0.252px;
+}
+
+.see-more {
+    text-align: right;
+    margin: 20px 0;
+    padding-right: 100px;
+    color: rgba(224, 44, 109, 0.87);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Featured card section is here */
+.featured-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-feature {
+    width: 100%;
+}
+.featured-image{
+    /* max-width: 337px; */
+}
+
+.feature-title {
+    color: #0A0826;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 157.895% */
+}
+
+.feature-description {
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 175% */
+    width: 70%;
+}
+
+.btn-join {
+    border-radius: 0;
+}
+
+/* Footer start is here */
+.footer {
+    margin-top: 40px;
+    background-color: var(--background);
+    /* display: grid;
+    grid-template-rows: 40vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+} 
+
+.company-name {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.copyright, .reserved{
+    color: var(--text-gray);
+    font-family: Manrope;
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 171.429% */
+    text-align: center;
+}
+
+.social-icon i {
+    color: var(--white-color);
+    padding: 6px;
+    font-size: 16px;
+    background-color: var(--background);
+    border-radius: 50%;
+    /* border: 1px solid var(--white-color); */
+    transition: transform 4s;
+    margin: 15px 5px 0 5px;
+}
+.social-icon i:hover{
+    background-color: var(--background-color);
+    transform: scale(1.1);
+}
+
+/* media query adjusted for all devices */
+/* @media screen and (max-width: 576px) {
+    .navbar-menu{
+        grid-template-columns: 1fr;
+    }
+    .navbar-menu ul{
+        display: none;
+    }
+    .banner-image{
+        height: 300px;
+    }
+    .banner-heading {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    .right-arrow{
+        display: none;
+    }
+    .btn-primary{
+        padding: 10px 12px;
+    }
+    .brand-name{
+       grid-template-columns: repeat(3, 1fr);
+       gap: 20px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .product{
+        grid-template-columns: 1fr;
+    }
+    /* .img-card{
+        width: 300px;
+    } */
+    /* .featured-card{
+        flex-direction: column;
+    }
+    .featured-image, .image-feature{
+        width: 100%;
+    } 
+    .feature-description{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .navbar-menu{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .brand-name{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+} */ */
